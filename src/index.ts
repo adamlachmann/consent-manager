@@ -7,6 +7,9 @@ export {
   savePreferences,
   onPreferencesSaved
 } from './consent-manager-builder/preferences'
+export {
+  onLoadExternalDestinations
+} from './consent-manager-builder/analytics'
 
 export const ConsentManagerBuilder = CMB
 export const ConsentManager = CM
