@@ -19,7 +19,7 @@ interface EmitLoadExternalDestinationParams {
 
 const emitter = new EventEmitter()
 
-export function onLoadExternalDestinations(listener: (integrations: object) => void) {
+export const onLoadExternalDestinations = (listener: (integrations: object) => void) => {
   emitter.on('loadExternalDestinations', listener)
   return () => emitter.off('loadExternalDestinations', listener)
 }
