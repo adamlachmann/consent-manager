@@ -1,5 +1,8 @@
 import fetch from 'isomorphic-fetch'
-import { flatten, map, sortedUniqBy, sortBy } from 'lodash'
+import flatten from 'lodash/flatten'
+import map from 'lodash/map'
+import sortedUniqBy from 'lodash/sortedUniqBy'
+import sortBy from 'lodash/sortBy'
 import { Destination } from '../types'
 
 const transformDestinations = (destinations: Destination[]) =>

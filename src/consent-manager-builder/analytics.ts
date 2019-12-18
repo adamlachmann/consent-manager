@@ -1,4 +1,5 @@
-import { isEmpty, pickBy } from 'lodash'
+import isEmpty from 'lodash/isEmpty'
+import pickBy from 'lodash/pickBy'
 import { EventEmitter } from 'events'
 import { WindowWithAJS, Destination } from '../types'
 
